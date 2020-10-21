@@ -2,7 +2,7 @@
 html {
     padding: 0;
     height: 100%;
-   
+    font-family: Arial Narrow,Arial,sans-serif;
 }
 body {
     height: 100%;
@@ -31,20 +31,14 @@ header {
 img {
     width: 100px;
 }
-#coachingImg{
+.subImg{
     padding-top: 35px;
     width: auto;
     justify-content: center;
     max-width: 600px;
     padding-left: 300px;
 }
-#coreImg {
-    padding-top: 35px;
-    width: auto;
-    justify-content: center;
-    max-width: 600px;
-    padding-left: 300px;
-}
+
 nav {
  grid-area: nav;
   height: 30px;
@@ -111,8 +105,17 @@ padding-left: 10px;
 
 }
 
+h1 {
+    text-align: center;
+}
 
+p {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
 
+}
 
 
 aside{
