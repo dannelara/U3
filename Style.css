@@ -1,0 +1,134 @@
+
+html {
+    padding: 0;
+    height: 100%;
+   
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-left: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: max-content 100px auto 50px;
+    grid-template-columns: auto 10px minmax(350px,1400px) auto;
+    grid-template-areas: 
+    'header nav  nav nav'
+    'localNav main main main '
+    'localNav main main main '
+ 'footer footer footer footer';
+}
+
+header {
+   grid-area: header;
+   padding-left: 0;
+   width: fit-content;
+   padding-left: 50px;
+   max-width: 50%;
+}
+img {
+    width: 100px;
+}
+#coachingImg{
+    padding-top: 35px;
+    width: auto;
+    justify-content: center;
+    max-width: 600px;
+    padding-left: 300px;
+}
+#coreImg {
+    padding-top: 35px;
+    width: auto;
+    justify-content: center;
+    max-width: 600px;
+    padding-left: 300px;
+}
+nav {
+ grid-area: nav;
+  height: 30px;
+  
+}
+nav ul{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+    padding-right: 25px;
+    
+}
+
+nav {
+    position: sticky;
+}
+nav a {
+    border-radius: 5px 5px;
+    text-decoration: none;
+    text-align: right;
+    text-size-adjust: bold;
+    font-size: 25px;
+    color: rgb(72, 180, 180);
+}
+.localNav {
+    box-sizing: border-box;
+    grid-area: localNav;
+    margin-right: 0x;
+    border:  rgb(149, 226, 245) solid;
+    max-width: 200px;
+    overflow: auto;
+
+    
+}
+.localNav ul {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    gap: 15px;
+    
+    
+}
+
+.search {
+    width: 50px;
+}
+.localNav a {
+    text-size-adjust: bold;
+    font-size: 20px;
+    color: rgb(43, 3, 13);
+    
+}
+
+main {
+grid-area: main;
+max-width: 100%;
+padding-left: 10px;
+
+}
+
+
+
+
+
+aside{
+grid-area: aside;
+box-sizing: content-box;
+background-color: rgb(181, 244, 247);
+min-width: 50px;
+max-width: 200px;
+grid-area: aside;  
+height: 100%;
+overflow: auto;
+
+}
+
+footer {
+    background-color: rgb(198, 252, 252);
+    grid-area: footer;
+    
+}
