@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Booking</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/cropped-logo-84x35.png" alt="">
+    </header>
+
+    <nav class="globalNav">
+        <ul>
+            <li>
+                <a href='/index.html'>Home</a>
+            </li>
+            <li> <a href='/schemma.html'>Schedule</a>
+            </li>
+            <li> <a href='/About.html' class="currentPage">About</a>
+            </li>
+            <li> <a href='/Passbeskrivning.html'>Class descriptions</a>
+            </li>
+            <li><a href='/BokaPass.html'>Booking</a></li>
+    
+        </ul>
+    </nav>
+    <main>
+        <h1>Book your training session</h1>
+        <div class="container">
+            <form>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="class">Class</label>
+                <select id="class" name="Class">
+                    <option value="coaching">Coaching</option>
+                    <option value="core">Core</option>
+                    <option value="personal Trainer">Personal Trainer</option>
+                    <option value="yoga">Yoga</option>
+                </select>
+                
+                <label for="date">Date *</label>
+                <select id="date" name="Date" >
+                    <option value="monday">Monday</option>
+                    <option value="thuesday"> Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                </select>
+
+                <label for="location">Location *</label>
+                <select id="location" name="location">
+                    <option value="Kalmar">Kalmar</option>
+                    <option value="Stockholm">Stockholm</option>
+                    <option value="Goteborg">Göteborg</option>
+                    <option value="Vaxjö">Växjö</option>
+                </select>
+                <label for="phone">Phone number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number..">
+
+                <input type="submit" value="Book now">
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hello World!</p>
+    </footer>
+
+</body>
+
+</html>
