@@ -30,6 +30,10 @@ header {
 }
 img {
     width: 100px;
+    border-radius: 15px;
+}
+.logo{
+    border-radius: 0px;
 }
 .subImg{
     padding-top: 35px;
@@ -37,6 +41,7 @@ img {
     justify-content: center;
     max-width: 600px;
     padding-left: 300px;
+    border-radius: 0px !important;
 }
 
 nav {
@@ -102,7 +107,7 @@ main {
 grid-area: main;
 max-width: 100%;
 padding-left: 10px;
-
+background-color: rgb(244, 244, 250);
 }
 
 h1 {
@@ -119,7 +124,7 @@ p {
 
 
 aside{
-
+  
 box-sizing: content-box;
 background-color: rgb(181, 244, 247);
 min-width: 50px;
@@ -143,16 +148,22 @@ footer {
     margin-top: 50px;
    text-align: center;
    overflow: auto;
-   width: 100%;
+   width: fit-content;
    margin-bottom:10px;
+   
 }
 
+
 #book figure {
- 
+ background-color: white;
  width: 200px;
  box-sizing: border-box;
- box-shadow: 10px 10px 10px rgb(191, 191, 214);
+ border-radius: 15px;
+ transition: 1s;
  
+}
+#book figure:hover {
+    box-shadow: 5px 5px 5px gray;
 }
 #book h2, a{
     margin: 5px;
@@ -166,7 +177,6 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
-   
     
 }
 
@@ -179,7 +189,7 @@ footer {
 /* form style */
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     padding: 20px;
     margin-right: 150px;
   }
@@ -208,9 +218,7 @@ input[type=submit] {
   }
  
   /* scheduele*/
-  #scheduelNav{
-      background-color: rgb(244, 244, 250);
-  }
+  
   #mainschedule{
       background-color: rgb(244, 244, 250);
       width: 100%;
@@ -230,8 +238,11 @@ input[type=submit] {
       border-radius: 10px 10px;
       font-size: 15px;
       width: 200px;
+      transition: 1s;
   }
-
+  #schedule > div:hover {
+  box-shadow: 5px 5px 5px gray;
+  }
   #schedule > div a {
     background-color:  rgb(114, 208, 214);
     color: white;
