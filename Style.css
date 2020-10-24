@@ -38,10 +38,12 @@ button {
     justify-content: end;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    font-size: 13px;
 }
 button:hover {
     background-color: rgb(84, 247, 247);
 }
+
 
 .globalNav li a{
 transition: all 0.3s;
