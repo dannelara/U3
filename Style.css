@@ -13,20 +13,41 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-rows: max-content 100px auto 50px;
-    grid-template-columns: auto 10px minmax(350px,1400px) auto;
+    grid-template-columns: 150px auto auto auto;
     grid-template-areas: 
-    'header nav  nav nav'
+    'header header header header'
     'localNav main main main '
     'localNav main main main '
  'footer footer footer footer';
 }
 
-header {
+header{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 5px 15%;
    grid-area: header;
-   padding-left: 0;
-   width: fit-content;
    padding-left: 50px;
-   max-width: 50%;
+}
+
+button {
+    padding: 9px 25px;
+    background-color:  rgb(114, 208, 214);
+    border: none;
+    border-radius: 5px;
+    justify-content: end;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: rgb(84, 247, 247);
+}
+
+.globalNav li a{
+transition: all 0.3s;
+}
+.globalNav li a:hover {
+    color: rgb(84, 247, 247);
 }
 img {
     width: 100px;
@@ -34,6 +55,7 @@ img {
 }
 .logo{
     border-radius: 0px;
+    margin-right: auto;
 }
 .subImg{
     padding-top: 35px;
@@ -45,9 +67,8 @@ img {
 }
 
 nav {
- grid-area: nav;
   height: 30px;
-  
+  transition: 1s;
 }
 nav ul{
     
@@ -62,9 +83,6 @@ nav ul{
     
 }
 
-nav {
-    position: sticky;
-}
 nav a {
     border-radius: 5px 5px;
     text-decoration: none;
@@ -104,8 +122,9 @@ nav a {
 }
 
 main {
+
 grid-area: main;
-max-width: 100%;
+width: 100%;
 padding-left: 10px;
 background-color: rgb(244, 244, 250);
 }
@@ -118,7 +137,7 @@ p {
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
-    font-size: 15px;
+    font-size: 20px;
 
 }
 
@@ -140,7 +159,7 @@ footer {
     grid-area: footer;
     
 }
-
+/*Booking*/
 
 #book {
     display: flex;
@@ -251,4 +270,8 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
+  }
+  #schedule p {
+      font-size: 20px;
+      
   }
