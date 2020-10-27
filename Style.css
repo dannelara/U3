@@ -90,14 +90,13 @@ nav a {
     border-radius: 5px 5px;
     text-decoration: none;
     text-align: right;
-    text-size-adjust: bold;
+   
     font-size: 25px;
     color: rgb(72, 180, 180);
 }
 .localNav {
     box-sizing: border-box;
     grid-area: localNav;
-    margin-right: 0x;
     border: rgb(198, 252, 252) solid;
     max-width: 200px;
     overflow: auto;
@@ -118,7 +117,6 @@ nav a {
     width: 50px;
 }
 .localNav a {
-    text-size-adjust: bold;
     font-size: 20px;
     color: rgb(43, 3, 13);
     
