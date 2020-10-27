@@ -3,6 +3,7 @@ html {
     padding: 0;
     height: 100%;
     font-family: Arial Narrow,Arial,sans-serif;
+    font-weight: 500;
 }
 body {
     height: 100%;
@@ -159,7 +160,11 @@ overflow: auto;
 footer {
     background-color: rgb(198, 252, 252);
     grid-area: footer;
+    overflow: hidden;
     
+}
+footer p {
+    font-size: 15px;
 }
 /*Booking*/
 
@@ -277,3 +282,6 @@ input[type=submit] {
       font-size: 20px;
       
   }
+
+  /*Index*/
+
