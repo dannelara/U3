@@ -285,4 +285,10 @@ input[type=submit] {
   }
 
   /*Index*/
+#pdfDiv{
+    text-align: center;
+}
+#pdfImg{
+    max-width: 50px;
 
+}
