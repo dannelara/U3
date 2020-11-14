@@ -56,7 +56,7 @@ transition: all 0.3s;
     color: rgb(84, 247, 247);
 }
 img {
-    width: 100px;
+    width: auto;
     border-radius: 15px;
 }
 .logo{
@@ -68,7 +68,6 @@ img {
     padding-top: 35px;
     width: auto;
     justify-content: center;
-    max-width: 600px;
     padding-left: 300px;
     border-radius: 0px !important;
 }
